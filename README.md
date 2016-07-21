@@ -16,17 +16,17 @@
 * スクリプトの書き方
 
 ```
-    $(document).ready(function(){
-    $('p').css('color', 'red');
-    //$('p')：セレクタ
-    //.css('color', 'red')：メソッド
-    });
-    
-    //省略できる
-    $(function(){
-    $('p').css('color', 'red').hide('slow');
-    //.hide('slow')：メソッドをつなげて書いている部分。メソッドチェーン
-    });
+$(document).ready(function(){
+$('p').css('color', 'red');
+//$('p')：セレクタ
+//.css('color', 'red')：メソッド
+});
+
+//省略できる
+$(function(){
+$('p').css('color', 'red').hide('slow');
+//.hide('slow')：メソッドをつなげて書いている部分。メソッドチェーン
+});
 ```
 
 ```math
