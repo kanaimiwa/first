@@ -15,7 +15,7 @@
 * メソッドチェーン：処理はつなげてかける
 * スクリプトの書き方
 
-
+```
     $(document).ready(function(){
     $('p').css('color', 'red');
     //$('p')：セレクタ
@@ -27,7 +27,7 @@
     $('p').css('color', 'red').hide('slow');
     //.hide('slow')：メソッドをつなげて書いている部分。メソッドチェーン
     });
-
+```
 
 ```math
 \left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
