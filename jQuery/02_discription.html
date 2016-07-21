@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery 概要</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>実行方法、書き方</h1>
+  <h2>実行方法</h2>
+  <ul>
+    <li>jquery.com/downloadでjQueryのファイルをダウンロードする</li>
+    <li>または、jquery.com/downloadでホストされているスクリプトを使う</li>
+    <li>bodyのとタグの直前に読み込む</li>
+    <li>jQueryを読み込んだ後に、スクリプトを書く</li>
+  </ul>
+  <h2>セレクタとメソッド</h2>
+  <p>基本的には、この2つを覚えていく</p>
+  <ul>
+    <li>セレクタ：処理対象となるDOM(Document Object Model)要素</li>
+    <li>メソッド：処理</li>
+    <li>メソッドチェーン：処理はつなげてかける</li>
+  </ul>
+  <h2>スクリプトの書き方</h2>
+  <pre><code>
+    $(document).ready(function(){
+      $('p').css('color', 'red');
+      //$('p')：セレクタ
+      //.css('color', 'red')：メソッド
+    });
+
+    //省略できる
+    $(function(){
+      $('p').css('color', 'red').hide('slow');
+      //.hide('slow')：メソッドをつなげて書いている部分。メソッドチェーン
+    });
+  </code></pre>
+</body>
+</html>

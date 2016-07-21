@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>タプルを使ってみよう</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>タプルを使ってみよう</h1>
+  <p>タプル・・・要素の中身を変更できないリスト</p>
+  <h2>タプルの表現方法</h2>
+  <ul>
+    <li>a = (2, 5, 8)</li>
+  </ul>
+  <h2>タプルを操作する命令</h2>
+  <ul>
+    <li>len：数</li>
+    <li>+：連結</li>
+    <li>*：繰り返し</li>
+    <li>[]：切り出し</li>
+    <li>list：タプルをリストに変換</li>
+    <li>tuple：リストをタプルに変換</li>
+  </ul>
+  <h2>使い方</h2>
+  <pre><code>
+    print len(a) #3
+    print a * 3 #3回繰り返す
+    a[2] = 100 #salesの2に100を代入 できない
+    print sales[2] #エラー
+
+    b = list(a) #タプルaをリストbに変換
+    print b
+    c = tuple(b) #リストbをタプルcに変換
+    print c
+  </code></pre>
+</body>
+</html>

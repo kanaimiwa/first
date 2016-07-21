@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文字列を使ってみよう</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>文字列を使ってみよう</h1>
+  <h2>書き方</h2>
+  <ul>
+    <li>「'」「"」でかこむ</li>
+    <ul>
+      <li>'hello' or "hello"</li>
+    </ul>
+    <li>日本語には、unicodeの「u」を先頭につけつ
+      <ul>
+        <li>u"こんにちは！"</li>
+      </ul>
+    </li>
+  </ul>
+  <h2>文字の演算子</h2>
+  <ul>
+    <li>+ ：連結</li>
+    <li>* ：繰り返し</li>
+  </ul>
+  <h2>使用例</h2>
+  <pre><code>
+    print "hello " + "world!"
+    print u"無駄" * 10
+  </code></pre>
+  <h2>エスケープ</h2>
+  <p>\を前につけるといろいろな表現ができる</p>
+
+  <ul>
+    <li>\n ：改行</li>
+    <li>\t ：タブ</li>
+    <li>\\ ：バックスラッシュ</li>
+    <li>'\ ：シングルクォーテーション</li>
+    <li>"""hogehoge""" or '''hogehoge'''：
+      <p>書いたままを表示してくれる。この中ではエスケープしなくてもよい</p>
+    </li>
+  </ul>
+  <h2>使用例</h2>
+  <pre><code>
+    print 'hello\n wo\trld\\ it\'s a pen'
+    print u"無駄" * 10
+    print """<html>
+      <body>
+        <div id="hoge"></div>
+      </body>
+    </html>"""
+  </code></pre>
+</body>
+</html>

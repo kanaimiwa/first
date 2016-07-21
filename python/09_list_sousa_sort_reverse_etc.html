@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>リストで使える命令 sort、reverse、split、joinを使おう</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>リストで使える命令 sort、reverse、split、joinを使おう</h1>
+  <h2>命令</h2>
+  <ul>
+    <li>sales = [255, 100, 353, 400, 'abc' ]</li>
+  </ul>
+  <h2>リストを操作する命令</h2>
+  <ul>
+    <li>sort：小さい順にならべかえる</li>
+    <li>reverse：並び順を逆にしてくれる</li>
+    <li>split：文字列を、ある文字で分離させて、リスト化する</li>
+    <li>join：リストを、ある文字で接続して、文字列かする</li>
+  </ul>
+  <h2>使い方</h2>
+  <pre><code>
+    salse =[50, 100, 80, 45]
+    sales.sort() #小さい順位ならべかえる
+    sales.reverse() #逆順にする
+
+    d = "2016/12/12"
+    print d.split("/") #"/"で分離して、リスト化する
+    a = ["a", "b", "c"]
+    print "-".join(a) #"-"で接続して、文字列化する
+  </code></pre>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>リストを使ってみよう</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>リストを使ってみよう</h1>
+  <p>他言語では、配列と呼ばれている</p>
+  <h2>表現方法</h2>
+  <ul>
+    <li>sales = [255, 100, 353, 400, 'abc' ]</li>
+  </ul>
+  <h2>リストを操作する命令</h2>
+  <ul>
+    <li>len：数</li>
+    <li>+：連結</li>
+    <li>*：繰り返し</li>
+    <li>[]：切り出し</li>
+    <li>in：存在チェック true or false</li>
+    <li>range：リストを一気に作る方法、単なる数字の連番</li>
+  </ul>
+  <pre><code>
+    print len[sales] #5
+    print sales[2] #353
+    sales[2] = 100 #salesの2に100を代入
+    print sales[2] #100
+    print 100 in sales #true
+    print range(10) #0から10未満のリストを作ってくれる
+    print range(3, 10) #3から10未満のリストを作ってくれる
+    print range(3, 10, 2) #3から10未満のリストを2飛ばしで作成してくれる
+  </code></pre>
+</body>
+</html>

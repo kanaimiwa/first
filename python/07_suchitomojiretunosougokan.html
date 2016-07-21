@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数値と文字列の相互間</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>数値と文字列の相互互換〜明示的に型をしていする</h1>
+  <p>他言語では、自動的に型変換をしてくれるがpythonでは、明示的に変換してあげないといけない</p>
+  <h2>命令</h2>
+  <ul>
+    <li>int, float：文字列から数値に変換する</li>
+    <li>str：数値 から 文字列に変換する</li>
+  </ul>
+  <h2>使用例</h2>
+  <pre><code>
+    print 5+"5" #エラーになる
+    print 5+int("5") #整数
+    print 5+float("5") #少数
+
+    age = 20
+    print "i am " + age + " years old!" #エラーになる
+    print "i am " + str(age) + " years old!" #文字列であることを明示してあげる
+  </code></pre>
+</body>
+</html>

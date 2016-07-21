@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文字列操作 len find []</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>文字列操作 len find []を使ってみよう</h1>
+  <h2>文字列に使える便利な命令 幾つか</h2>
+  <ul>
+    <li>len：文字数を調べる</li>
+    <li>fint：検索をする。見つからなかったときは−1を返す</li>
+    <li>[][start:end]：切り出しをする</li>
+    <li><small>文字の位置は0から始まる</small></li>
+  </ul>
+  <h2>使用例</h2>
+  <pre><code>
+    s = "abcdefghi"
+
+    #文字数を調べる
+    print len(s)
+
+    #文字の検索
+    print s.find("x")
+
+    #文字の切り出し
+    print s[2] #２番目の切り出し c
+    print s[2:5] #2から5未満の切り出し　bcd
+    print s[:5] #始めから5未満の切り出し
+    print s[2:] #2番目から最後までの切り出し
+    print s[2:-1] #2番目から後ろから数えて1番目未満の切り出し bcdefgh</code></pre>
+</body>
+</html>

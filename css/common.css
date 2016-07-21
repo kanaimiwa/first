@@ -1,0 +1,32 @@
+/* line 4, ../compass/sass/common.scss */
+body {
+  width: 80%;
+  margin: 15px auto;
+}
+
+/* line 10, ../compass/sass/common.scss */
+h1 {
+  font-size: 24px;
+  font-size: 1.71429rem;
+  text-align: center;
+  padding: 20px 0px;
+  font-weight: lighter;
+}
+
+/* line 17, ../compass/sass/common.scss */
+h2 {
+  font-size: 22px;
+  font-size: 1.57143rem;
+  font-weight: lighter;
+  padding: 10px 0;
+}
+
+/* line 23, ../compass/sass/common.scss */
+h2 + ul {
+  padding-bottom: 15px;
+}
+
+/* line 28, ../compass/sass/common.scss */
+ul li {
+  margin-left: 20px;
+}

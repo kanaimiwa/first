@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import "value";
+
+html{
+  font-size: 14px;
+}
+
+body{
+  color: #333;
+  text-align: left;
+  line-height: 170%;
+}
+
+html, body, h1, h2, h3, h4, ul, ol, li, p, div, img, span,
+code, table, tr, td, th, a, pre{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+pre{
+  margin-top: -20px;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+*, *:after, *:before{
+  @include box-sizing();
+}

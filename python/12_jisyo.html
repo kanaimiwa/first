@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>辞書を使ってみよう</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>辞書を使ってみよう</h1>
+  <p>辞書・・・keyとvalueが一緒になったもの</p>
+  <h2>辞書の表現方法</h2>
+  <ul>
+    <li>sales = {"taguchi":200, "fkoji":200, "dotinstall":500}</li>
+    <li>printした時には、この順番通りには出ない</li>
+  </ul>
+  <h2>辞書を操作する命令</h2>
+  <ul>
+    <li>in：keyの存在チェック true or false</li>
+    <li>keys：keyの一覧</li>
+    <li>values：値の一覧</li>
+    <li>items：両方の一覧</li>
+  </ul>
+  <h2>使い方</h2>
+  <pre><code>
+    print sales["tagchu"] #taguchiのvalueが見たい
+    sales["fkoji"] = 800 #fkojiのvalueに800を代入する
+    print sales　#fkojiのvalueが変更されている
+
+    print "taguchi" in sales
+    print sales.keys()
+    print sales.values()
+    print sales.items()
+  </code></pre>
+</body>
+</html>

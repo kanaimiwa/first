@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/////////////フォントサイズ/////////////
+@mixin font-size($size: 24, $base: 14) {
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+$fontF1:'Vollkorn', serif;
+$fontF2:'Sorts Mill Goudy', serif;
+
+
+/////////////box-sizing/////////////
+@mixin box-sizing($type:border-box)
+ {
+ -webkit-box-sizing:$type;
+ -moz-box-sizing:$type;
+ box-sizing:$type;
+ }
+
+ /////////////border-radius/////////////
+ @mixin border-radius($type)
+ {
+ -webkit-border-radius:$type $type $type $type;
+ -moz-border-radius:$type $type $type $type;
+ border-radius:$type $type $type $type;
+ }
+
+ /////////////opacity/////////////
+
+  @mixin opacity($type:0.6)
+  {
+  	filter:alpha(opacity=$type*100);
+  	-moz-opacity: $type;
+  	opacity: $type;
+  }
+/////////////レスポンシブ/////////////
+
+@mixin res($size){
+	@media only screen and (max-width: $size + "px") {
+		@content;
+	}
+}

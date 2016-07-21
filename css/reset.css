@@ -1,0 +1,37 @@
+/* line 4, ../compass/sass/reset.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 8, ../compass/sass/reset.scss */
+body {
+  color: #333;
+  text-align: left;
+  line-height: 170%;
+}
+
+/* line 14, ../compass/sass/reset.scss */
+html, body, h1, h2, h3, h4, ul, ol, li, p, div, img, span,
+code, table, tr, td, th, a, pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+/* line 21, ../compass/sass/reset.scss */
+pre {
+  margin-top: -20px;
+}
+
+/* line 25, ../compass/sass/reset.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 29, ../compass/sass/reset.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

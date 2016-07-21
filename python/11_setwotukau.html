@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>セットを使ってみよう</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body id="python">
+  <h1>セット（集合型）を使ってみよう</h1>
+  <p>セット・・・重複を許さないリスト</p>
+  <h2>セットの表現方法</h2>
+  <ul>
+    <li>a = set([1, 2, 3, 4])</li>
+    <li>数字が重複していると、後ろに来るものは無視される</li>
+  </ul>
+  <h2>タプルを操作する命令</h2>
+  <ul>
+    <li>-：差集合 </li>
+    <li>|：和集合</li>
+    <li>＆：積集合</li>
+    <li>^：どちらかにしかないもの</li>
+  </ul>
+  <h2>使い方</h2>
+  <pre><code>
+    a = set([1, 2, 3, 4])
+    b = set([3, 4, 5])
+    print a - b # aにあってbにないもの　1,2
+    print a | b # 1, 2, 3, 4, 5
+    print a & b # 3, 4 重複したとこだけ表示される
+    print a ^ b # 1, 2, 5 どちらかにしかないもの
+  </code></pre>
+</body>
+</html>
