@@ -15,8 +15,7 @@
 * メソッドチェーン：処理はつなげてかける
 * スクリプトの書き方
 
-```
-$(document).ready(function(){
+``` $(document).ready(function(){
 $('p').css('color', 'red');
 //$('p')：セレクタ
 //.css('color', 'red')：メソッド
@@ -29,7 +28,9 @@ $('p').css('color', 'red').hide('slow');
 });
 ```
 
-```math
+##うまくできない
+
+``` math
 \left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
 \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 ```
